@@ -31,7 +31,7 @@ public class BookingService {
         if (booking != null) {
             booking.setDate(bookingDetails.getDate());
             booking.setUser(bookingDetails.getUser());
-//            booking.setService(bookingDetails.getService());
+            booking.setService(bookingDetails.getService());
             booking.setRoom(bookingDetails.getRoom());
             return bookingRepository.save(booking);
         }

@@ -31,7 +31,7 @@ public class ReviewService {
             review.setComment(reviewDetails.getComment());
             review.setRating(reviewDetails.getRating());
             review.setUser(reviewDetails.getUser());
-//            review.setServices(reviewDetails.getServices());
+            review.setServices(reviewDetails.getServices());
             return reviewRepository.save(review);
         }
         return null;
